@@ -1,0 +1,101 @@
+.ProjectPage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    background: #111;
+    font-family: Helveitca;
+}
+
+.ProjectPage .background{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110vw;
+    height: auto;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.ProjectPage #title{
+    width: 100vw;
+    text-align: center;
+    color: goldenrod;
+    padding: 1vw;
+    font-size: 4vw;
+    z-index: 10;
+}
+
+.Projects{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    color: white;
+}
+
+.Project{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    margin: 0.5vw;
+    width: 30vw;
+    /* From https://css.glass */
+    background: rgba(240, 233, 233, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(240, 233, 233, 0.3);
+}
+
+.Project h1{
+    color: goldenrod;
+    margin-top: 10px;
+}
+
+.Project h2{
+    margin: 10px;
+    color: rgb(215, 188, 36);
+}
+
+.Project h4{
+    margin: 10px;
+}
+
+.Project a{
+    text-decoration: none;
+    color: white;
+}
+
+.Project .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.ProjectButton{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    background: goldenrod;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.ProjectButton:hover{
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    background: white;
+}
+
+.Project img{
+    height: 20vh;
+    width: auto;
+    border-radius: 10%;
+    width: auto;
+    align-self: center;
+}

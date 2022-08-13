@@ -1,0 +1,28 @@
+.AboutBackGround{
+    /* background: linear-gradient(to top,#1F0021 75%, #570062 100%);
+     */
+    background: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -20;
+}
+
+.Square{
+    opacity: 0;
+    position: absolute;
+    animation: spinUp 8s infinite;
+}
+
+@keyframes spinUp {
+    0%{
+        transform: translateY(100vh);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-40vh);
+    }
+}

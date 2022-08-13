@@ -1,0 +1,136 @@
+.AboutPage{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    z-index: 2;
+}
+
+.AboutPage .title{
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    overflow: hidden;
+    font-size: 4vw;
+    font-family: 'Alumni Sans Inline One';
+    text-align: center;
+    overflow: hidden;
+    margin: 0.25vw;
+    padding: 1vw;
+}
+
+.AboutContent{
+    width: 80vw;
+    color: white;
+    font-family: 'Alumni Sans Inline One';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutContent .topics{
+    width: 90%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutButton{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5vw;
+    padding: 1vw;
+    margin: 0.5vw;
+    border-radius: 40px;
+    color: white;
+    opacity: 0.8;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.ContentBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: Arbutus;
+    overflow: hidden;
+}
+
+.ContentBox .Box{
+    border-radius: 20px;
+    width: 100%;
+    margin: 0.5vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.Box, .AboutContent .topics{
+    /* From https://css.glass */
+    background: rgba(240, 233, 233, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(240, 233, 233, 0.3);
+}
+
+.Box h3, .Box h2, .Box h1, .Box ul{
+    overflow: hidden;
+    margin-top: 2vw;
+}
+
+.Box h2, .Box h3, .Box ul{
+    font-size: 1vw;
+}
+
+.ContentBox .Row{
+    color: white;
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Row .element{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row .element{
+    font-size: 1vw;
+}
+
+.Row .element i{
+    font-size: 5vw;
+}
+
+.Row .element img{
+    width: 5vw;
+    height: auto;
+}
+
+#Skills_Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@keyframes DropDown {
+    0%{
+        /* transform: translateY(-100%); */
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

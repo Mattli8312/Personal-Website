@@ -1,0 +1,48 @@
+.BackGround{
+    overflow: hidden;
+}
+.Sun{
+    position: absolute;
+    top: 4vw;
+    right: 4vh;
+    width: 25vw;
+    height: 25vw;
+    background: linear-gradient(to top, #FFF100, #C73E51);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+#Cloud{
+    position: absolute;
+    height: 3vh;
+    background: #999;
+    border-radius: 1.5vh;
+    animation: cloud_movement 20s infinite;
+    opacity: 0;
+}
+
+@keyframes cloud_movement {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(50vw);
+    }
+}
+
+#Star{
+    position: absolute;
+    background: white;
+}
+
+#Mountain{
+    position: absolute;
+    z-index: 10;
+    transform: rotateZ(45deg);
+    border-radius: 1vw;
+    background: linear-gradient(to bottom right, #181369, #15072b);
+}

@@ -1,0 +1,55 @@
+.TitlePage{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1B053A, #570062);
+    z-index: 2;
+}
+
+.Description_Box{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.TitlePage #Hi_Text{
+    font-family:Sofia, Audiowide;
+    color: #ff9a01;
+    font-size: 10vw;
+    animation: Growth 0.75s;
+}
+
+.TitlePage #About_Text{
+    font-family: Trirong;
+    color: white;
+    font-size: 2vw;
+    animation: SlideFromBottom 1.5s;
+}
+
+@keyframes Growth {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes SlideFromBottom {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
